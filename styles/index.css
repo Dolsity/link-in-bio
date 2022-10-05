@@ -4,7 +4,7 @@ body {
     font-family: "Josefin Sans", "Arial", sans-serif;
     background: white;
     background: fixed;
-    background: linear-gradient(#80808069,#258bb38b),url("./img/background.jpg");
+    background: linear-gradient(rgba(255, 186, 248, 0.552),#258bb38b),url("./img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
   }
@@ -20,6 +20,13 @@ body {
   .profile-photo {
     border-radius: 100%;
     width: 120px;
+    transition: all 0.3s ease;
+    filter: none;
+  }
+  
+  .profile-photo:hover {
+    filter: drop-shadow(0 0 0.75rem #ffffff);
+    transition: all 0.3s ease;
   }
 
   .link-tree {
@@ -45,13 +52,15 @@ body {
 
   .link-tree > li a {
     background: #ffffff30;
+    transition: all 0.2s ease;
   }
 
 
   .link-tree > li a:hover,
   .link-tree > li a:focus {
     color: white;
-    background: #ffffff5f;
+    background: #ffffff70;
+    transition: all 0.2s ease;
   }
 
 
@@ -99,4 +108,11 @@ body {
     color: #fff;
     font-size: 24px;
     margin-left: 10px;
+    filter: none;
+    transition: all 0.3s ease;
+}
+
+.social__icon--link:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+  transition: all 0.3s ease;
 }
