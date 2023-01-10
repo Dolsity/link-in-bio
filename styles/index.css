@@ -1,68 +1,66 @@
 body {
     text-align: center;
     margin-top: 48px;
-    font-family: "Josefin Sans", "Arial", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: white;
     background: fixed;
-    background: linear-gradient(rgba(255, 186, 248, 0.552),#258bb38b),url("./img/background.jpg");
+    background: linear-gradient(#f3c3fa,#102832);
     background-attachment: fixed;
-    background-size: cover;
-  }
+    background-position: left;
+}
 
-  h1, p {
-    color: #ffffff;
-  }
+h1, p {
+  color: #ffffff;
+}
 
-  p {
-    font-size: 22px;
-  }
+p {
+  font-size: 22px;
+}
 
-  .profile-photo {
-    border-radius: 100%;
-    width: 120px;
-    transition: all 0.3s ease;
-    filter: none;
-  }
-  
-  .profile-photo:hover {
-    filter: drop-shadow(0 0 0.75rem #ffffff);
-    transition: all 0.3s ease;
-  }
+.profile-photo {
+  width: 120px;
+  transition: all 0.3s ease;
+  border-radius: 100%;
+}
 
-  .link-tree {
-    list-style: none;
-    padding: 0;
-    font-size: 20px;
-  }
+.profile-photo:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-  .link-tree > li {
-    margin: 12px 0;
-  }
+.link-tree {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
 
-  .link-tree >li a {
-    color: #ffffff;
-    border-radius: 6px;
-    padding: 12px;
-    text-decoration: none;
-    max-width: 360px;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-  } 
+.link-tree > li {
+  margin: 12px 0;
+}
 
-  .link-tree > li a {
-    background: #ffffff30;
-    transition: all 0.2s ease;
-  }
+.link-tree >li a {
+  color: #ffffffde;
+  border-radius: 6px;
+  padding: 12px;
+  text-decoration: none;
+  max-width: 360px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+} 
 
+.link-tree > li a {
+  background: #ffffff30;
+  transition: all 0.2s ease;
+}
 
-  .link-tree > li a:hover,
-  .link-tree > li a:focus {
-    color: white;
-    background: #ffffff70;
-    transition: all 0.2s ease;
-  }
-
+.link-tree > li a:hover,
+.link-tree > li a:focus {
+  color: white;
+  background: #ffffff70;
+  transition: all 0.2s ease;
+}
 
 /* Footer CSS */
 .footer__container {
