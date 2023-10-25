@@ -3,27 +3,51 @@ body {
   margin-top: 48px;
   font-family: Arial, Helvetica, sans-serif;
   background: #efe6f7;
-  background: linear-gradient(#f3c3fa,#654f4a);
+  background: linear-gradient(#c3ddfa,#4a6465);
   background-attachment: fixed;
 }
 
-h1, p {
-  color: #ffffff;
+body > * {
+  margin: 0 auto;
 }
 
-p {
-  font-size: 22px;
-}
-
-.profile-photo {
+.profile_photo {
   width: 120px;
   transition: all 0.3s ease;
   border-radius: 100%;
+  border: 1px solid #ffffff;
+  margin-bottom: 12px;
 }
 
-.profile-photo:hover {
+.username {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px;
+}
+
+.social_icon_link {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.social_icon_link:hover {
   filter: drop-shadow(0 0 0.75rem #ffffff);
-  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .link-tree {
@@ -56,16 +80,4 @@ p {
   color: white;
   background: #ffffff70;
   transition: all 0.2s ease;
-}
-
-.social__icon--link {
-  color: #fff;
-  font-size: 24px;
-  margin-left: 10px;
-  transition: all 0.3s ease;
-}
-
-.social__icon--link:hover {
-  filter: drop-shadow(0 0 0.75rem #ffffff);
-  transition: all 0.3s ease;
 }
