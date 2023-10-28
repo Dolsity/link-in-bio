@@ -2,33 +2,28 @@ body {
   text-align: center;
   margin-top: 48px;
   font-family: Arial, Helvetica, sans-serif;
-  background: #efe6f7;
-  background: linear-gradient(#c3ddfa,#4a6465);
+  background: #655f4a;
+  background: linear-gradient(#655f4a, #c091c2);
   background-attachment: fixed;
 }
 
-body > * {
-  margin: 0 auto;
+.user_heading {
+  color: #ffffff;
 }
 
 .profile_photo {
   width: 120px;
-  transition: all 0.3s ease;
   border-radius: 100%;
-  border: 1px solid #ffffff;
-  margin-bottom: 12px;
+  border: 1.5px solid #ffffff;
 }
 
 .username {
   font-size: 25px;
   font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 12px;
 }
 
 .description {
   font-size: 16px;
-  color: #ffffff;
 }
 
 .social_media {
@@ -41,13 +36,11 @@ body > * {
 .social_icon_link {
   color: #fff;
   font-size: 24px;
-  margin-left: 10px;
-  transition: all 0.3s ease;
+  margin: 10px;
 }
 
 .social_icon_link:hover {
-  filter: drop-shadow(0 0 0.75rem #ffffff);
-  transition: all 0.3s ease;
+  color: #cccccc;
 }
 
 .link-tree {
@@ -59,9 +52,9 @@ body > * {
   margin: 12px 0;
 }
 
-.link-tree >li a {
+.link-tree > li a {
   color: #ffffffde;
-  border-radius: 6px;
+  border-radius: 30px;
   padding: 12px;
   text-decoration: none;
   max-width: 360px;
@@ -80,4 +73,10 @@ body > * {
   color: white;
   background: #ffffff70;
   transition: all 0.2s ease;
+}
+
+.website_rights {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 30px;
 }
