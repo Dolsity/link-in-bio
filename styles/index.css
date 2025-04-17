@@ -1,83 +1,171 @@
+* {
+  outline: none !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-width: 350px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
-  text-align: center;
-  margin-top: 48px;
   font-family: Arial, Helvetica, sans-serif;
-  background: #655f4a;
-  background: linear-gradient(#655f4a, #c091c2);
-  background-attachment: fixed;
+  background: linear-gradient(#0e102e, #615c7e);
 }
 
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* -- DESKTOP SECTION -- */
+/* -- HEADER (DESKTOP) -- */
 .user_heading {
+  text-align: center;
   color: #ffffff;
+  padding: 12px;
+  margin: 15px;
 }
 
-.profile_photo {
+/* -- PROFILE INFO (DESKTOP) -- */
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile_info img {
   width: 120px;
   border-radius: 100%;
   border: 1.5px solid #ffffff;
 }
 
-.username {
+.profile_info h1 {
   font-size: 25px;
   font-weight: 600;
+  margin: 15px 0;
 }
 
-.description {
+.profile_info p {
   font-size: 16px;
 }
 
-.social_media {
+/* -- SOCIAL MEDIA ICONS (DESKTOP) -- */
+.social_media_icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 22px;
+  padding: 12px;
 }
 
-.social_icon_link {
-  color: #fff;
+.social_media_icons a {
+  color: #ffffff;
   font-size: 24px;
   margin: 10px;
+  text-decoration: none;
 }
 
 .social_icon_link:hover {
   color: #cccccc;
 }
 
-.link-tree {
+/* -- SOCIAL MEDIA LINKS (DESKTOP) -- */
+.social_media_links {
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  font-size: 20px;
 }
 
-.link-tree > li {
-  margin: 12px 0;
+.social_media_links > li {
+  margin: 8px 0;
+  font-size: 16px;
   list-style-type: none;
 }
 
-.link-tree > li a {
+.social_media_links > li a {
   color: #ffffffde;
   border-radius: 30px;
-  padding: 12px;
-  text-decoration: none;
-  max-width: 360px;
-  width: 90%;
+  padding: 13px;
+  max-width: 800px;
   display: block;
   margin: 0 auto;
+  text-decoration: none;
+  border: 1px solid #ffffff;
 } 
 
-.link-tree > li a {
+.social_media_links > li a {
   background: #ffffff30;
   transition: all 0.2s ease;
 }
 
-.link-tree > li a:hover,
-.link-tree > li a:focus {
-  color: white;
+.social_media_links > li a:hover,
+.social_media_links > li a:focus {
+  color: #ffffff;
   background: #ffffff70;
   transition: all 0.2s ease;
 }
 
+/* -- FOOTER (DESKTOP) -- */
 .website_rights {
   color: #ffffff;
   font-size: 14px;
-  margin-top: 30px;
+  padding: 15px;
+}
+
+/* -- MOBILE SECTION -- */
+@media screen and (max-width: 430px) {
+  /* -- HEADER (MOBILE) -- */
+  .user_heading {
+    padding: 10px;
+    margin: 13px;
+  }
+
+  /* -- PROFILE INFO (MOBILE) -- */
+  .profile_info {
+    padding: 8px;
+  }
+
+  .profile_info img {
+    width: 115px;
+  }
+
+  .profile_info h1 {
+    font-size: 23px;
+    margin: 13px 0;
+  }
+
+  .profile_info p {
+    font-size: 14px;
+  }
+
+  /* -- SOCIAL MEDIA ICONS (MOBILE) -- */
+  .social_media_icons {
+    padding: 10px;
+  }
+
+  .social_media_icons a {
+    font-size: 22px;
+    margin: 6px;
+  }
+
+  /* -- SOCIAL MEDIA LINKS (MOBILE) -- */
+  .social_media_links > li {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  .social_media_links > li a {
+    padding: 12px;
+  } 
+
+  /* -- FOOTER (MOBILE) -- */
+  .website_rights {
+    font-size: 12px;
+    padding: 13px;
+  }
 }
