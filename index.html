@@ -4,19 +4,22 @@
     <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Dolsity, @dolsity" name="keywords">
-    <meta content="@dolsity" property="og:title" />
-    <meta content="Check out @dolsity | Full Stack Developer" property="og:description" />
-    <meta content="https://dolsity.com/link-in-bio/" property="og:url" />
-    <meta content="website" property="og:type" />
-    <meta content="@dolsity" property="og:site_name" />
-    <meta content="#655f4a" data-react-helmet="true" name="theme-color" />
-    <meta content="https://dolsity.com/link-in-bio/styles/img/pfp.png" property="og:image" />
+    <meta name="keywords" content="Dolsity, @dolsity" />
+    <meta name="description" content="Check out @dolsity | Full-Stack Developer" />
+    <meta name="author" content="Dolsity" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="@dolsity" />
+    <meta property="og:description" content="Check out @dolsity | Full-Stack Developer" />
+    <meta property="og:url" content="https://dolsity.com/link-in-bio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="@dolsity" />
+    <meta data-react-helmet="true" name="theme-color" content="#655f4a" />
+    <meta property="og:image" content="https://dolsity.com/link-in-bio/images/pfp.png" />
     <!-- TITLE -->
     <title>@dolsity</title>
     <!-- STYLESHEETS -->
-    <link rel="icon" href="./styles/img/pfp.png">
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="./images/pfp.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -25,40 +28,48 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div class="user_heading">
-      <img class="profile_photo" src="./styles/img/pfp.png" alt="img" />
-      <h1 class="username">Dolsity</h1>
-      <p class="description">Full Stack Developer</p>
-      <section class="social_media">
-        <div class="social_icon_links">
-          <a href="https://dolsity.com/" target="_blank" rel="nofollow noopener" class="social_icon_link" aria-label="globe"><i class="fa fa-globe"></i></a>
-          <a href="https://www.instagram.com/dolsity/" target="_blank" rel="nofollow noopener" class="social_icon_link" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/Dolsity" target="_blank" rel="nofollow noopener" class="social_icon_link" aria-label="github"><i class="fab fa-github"></i></a>
-          <a href="https://stackoverflow.com/users/20505722/dolsity" target="_blank" rel="nofollow noopener" class="social_icon_link" aria-label="stack-overflow"><i class="fab fa-stack-overflow"></i></a>
+    <main class="user_heading">
+      <!-- PROFILE INFO -->
+      <section class="profile_info">
+        <img src="./images/pfp.png" alt="pfp" />
+        <h1>@dolsity</h1>
+        <p>Full-Stack Developer</p>
+      </section>
+
+      <!-- SOCIAL MEDIA ICONS -->
+      <section class="social_media_icons">
+        <div class="social_media_icon">
+          <a href="https://dolsity.com/" target="_blank" rel="nofollow noopener" aria-label="globe" class="social_icon_link">
+            <i class="fa fa-globe"></i>
+          </a>
+          <a href="https://www.instagram.com/dolsity/" target="_blank" rel="nofollow noopener" aria-label="instagram" class="social_icon_link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Dolsity" target="_blank" rel="nofollow noopener" aria-label="github" class="social_icon_link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/20505722/dolsity" target="_blank" rel="nofollow noopener" aria-label="stack-overflow" class="social_icon_link">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
         </div>
       </section>
-    <!-- LINKS -->
-      <ul class="link-tree">
+      
+      <!-- MAIN LINKS -->
+      <ul class="social_media_links">
         <li>
-          <a href="https://dolsity.com" target="_blank" rel="nofollow noopener">
-            About me
-          </a>
+          <a href="https://dolsity.com" target="_blank" rel="nofollow noopener">About me</a>
         </li>
         <li>
-          <a href="https://dolsity.com/#myskills" target="_blank" rel="nofollow noopener">
-            My Skills
-          </a>
+          <a href="https://dolsity.com/#myskills" target="_blank" rel="nofollow noopener">My Skills</a>
         </li>
         <li>
-          <a href="https://dolsity.com/#mywork" target="_blank" rel="nofollow noopener">
-            My Work
-          </a>
+          <a href="https://dolsity.com/#mywork" target="_blank" rel="nofollow noopener">My Work</a>
         </li>
       </ul>
       <!-- FOOTER -->
-      <div class="footer">
-        <p class="website_rights">Dolsity © 2025</p>
-      </div>
-    </div>
+      <footer class="footer">
+        <p class="website_rights">Dolsity &copy; 2025</p>
+      </footer>
+    </main>
   </body>
 </html>
